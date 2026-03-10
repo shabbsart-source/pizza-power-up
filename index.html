@@ -12,6 +12,16 @@
 
 <body>
 
+<div class="start-screen" id="startScreen">
+
+<h1>PIZZA POWER-UP</h1>
+
+<p class="press-start">PRESS START</p>
+
+<button onclick="startGame()">START GAME</button>
+
+</div>
+
 <header>
 <img src="pizza-power-up-logo.png" class="logo">
 
@@ -148,6 +158,15 @@ START ORDER
 <footer>
 <p>© Pizza Power-Up</p>
 </footer>
+
+<script>
+
+function startGame(){
+document.getElementById("startScreen").style.display="none";
+}
+
+</script>
+
 
 </body>
 </html>
