@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 
 <meta charset="UTF-8">
@@ -13,7 +14,9 @@
 
 </head>
 
+
 <body>
+
 
 <!-- START SCREEN -->
 
@@ -35,12 +38,15 @@
 </audio>
 
 
+
 <header>
 
 <h1>🍕 Pizza Power-Up</h1>
+
 <p>Level Up Your Pizza & Donair Game</p>
 
 </header>
+
 
 
 <nav id="gameMenu">
@@ -53,22 +59,37 @@
 </nav>
 
 
+
 <section id="pizza">
 
 <h2>Pizza Menu</h2>
 
 <div class="menu">
 
-<div class="item">🍖 Meat Lovers</div>
-<div class="item">🌱 Vegetarian</div>
-<div class="item">🧀 Cheese</div>
-<div class="item">🍍 Hawaiian</div>
-<div class="item">🔥 Power-Up</div>
-<div class="item">⚔️ Conquest</div>
+<div class="item">
+<img src="images/meat-lovers.jpg">
+<h3>🍖 Meat Lovers</h3>
+</div>
+
+<div class="item">
+<img src="images/vegetarian.jpg">
+<h3>🌱 Vegetarian</h3>
+</div>
+
+<div class="item">
+<img src="images/cheese.jpg">
+<h3>🧀 Cheese</h3>
+</div>
+
+<div class="item">
+<img src="images/hawaiian.jpg">
+<h3>🍍 Hawaiian</h3>
+</div>
 
 </div>
 
 </section>
+
 
 
 <section id="donair">
@@ -77,15 +98,20 @@
 
 <div class="menu">
 
-<div class="item">🍺 Beer Donair</div>
-<div class="item">🐔 Chicken Donair</div>
-<div class="item">🍟 Donair Poutine</div>
-<div class="item">🔥 Power-Up Donair</div>
-<div class="item">⚔️ Conquest</div>
+<div class="item">
+<img src="images/donair.jpg">
+<h3>🔥 Power-Up Donair</h3>
+</div>
+
+<div class="item">
+<img src="images/donair.jpg">
+<h3>🍟 Donair Poutine</h3>
+</div>
 
 </div>
 
 </section>
+
 
 
 <section id="deals">
@@ -95,12 +121,15 @@
 <div class="menu">
 
 <div class="item">Level 1 Combo</div>
+
 <div class="item">Boss Battle</div>
+
 <div class="item">Party Mode</div>
 
 </div>
 
 </section>
+
 
 
 <section id="order">
@@ -112,11 +141,13 @@
 </section>
 
 
+
 <footer>
 
 <p>© Pizza Power-Up</p>
 
 </footer>
+
 
 
 <script>
@@ -131,7 +162,8 @@ document.getElementById("startScreen").style.display="none"
 }
 
 
-/* COIN SOUND ON MENU ITEMS */
+
+/* COIN SOUND */
 
 const items = document.querySelectorAll(".item")
 
@@ -146,7 +178,8 @@ document.getElementById("coinSound").play()
 })
 
 
-/* GAME STYLE MENU CURSOR */
+
+/* GAME MENU CURSOR */
 
 const options = document.querySelectorAll(".menu-option")
 
@@ -184,6 +217,7 @@ updateCursor()
 
 
 </script>
+
 
 </body>
 </html>

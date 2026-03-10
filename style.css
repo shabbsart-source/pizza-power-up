@@ -7,6 +7,8 @@ font-family:'Press Start 2P', cursive;
 
 }
 
+
+
 header{
 
 text-align:center;
@@ -14,6 +16,8 @@ padding:40px;
 background:#ff3c00;
 
 }
+
+
 
 nav{
 
@@ -25,13 +29,16 @@ background:#222;
 
 }
 
+
+
 nav a{
 
 color:white;
 text-decoration:none;
-position:relative;
 
 }
+
+
 
 nav a.selected::before{
 
@@ -40,12 +47,16 @@ color:#ffcc00;
 
 }
 
+
+
 section{
 
 padding:50px;
 text-align:center;
 
 }
+
+
 
 .menu{
 
@@ -56,22 +67,38 @@ margin-top:30px;
 
 }
 
+
+
 .item{
 
 background:#222;
-padding:25px;
+padding:20px;
 border:3px solid #ff3c00;
-transition:transform .2s, box-shadow .2s;
 cursor:pointer;
+transition:.2s;
 
 }
+
+
 
 .item:hover{
 
-transform:scale(1.1);
+transform:scale(1.08);
 box-shadow:0 0 15px #ff3c00;
 
 }
+
+
+
+.item img{
+
+width:100%;
+border-radius:6px;
+margin-bottom:10px;
+
+}
+
+
 
 .order-button{
 
@@ -84,6 +111,8 @@ cursor:pointer;
 
 }
 
+
+
 footer{
 
 text-align:center;
@@ -91,6 +120,7 @@ padding:20px;
 background:#222;
 
 }
+
 
 
 /* START SCREEN */
@@ -112,14 +142,14 @@ z-index:999;
 }
 
 
-/* INVISIBLE PRESS START HITBOX */
+
+/* CLICKABLE PRESS START ZONE */
 
 .start-button{
 
 position:absolute;
 
-/* adjust these to match your artwork */
-bottom:90px;
+bottom:70px;
 left:50%;
 
 transform:translateX(-50%);
@@ -133,10 +163,28 @@ cursor:pointer;
 
 
 
-.start-button:hover{
+/* MOBILE */
 
-box-shadow:0 0 20px #ffb300;
-border-radius:8px;
+@media (max-width:768px){
+
+nav{
+
+flex-direction:column;
+gap:15px;
+
+}
+
+.menu{
+
+grid-template-columns:1fr;
+
+}
+
+section{
+
+padding:25px;
+
+}
 
 }
 
