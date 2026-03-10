@@ -1,16 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Pizza Power-Up</title>
+
 <link rel="stylesheet" href="style.css">
 
-<!-- Pixel Font -->
 <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
+
+<!-- START SCREEN -->
 
 <div class="start-screen" id="startScreen">
 
@@ -22,113 +27,80 @@
 
 </div>
 
+
+<!-- SOUNDS -->
+
+<audio id="startSound">
+<source src="https://cdn.pixabay.com/download/audio/2022/03/15/audio_115b9b4c44.mp3?filename=retro-game-notification-212.wav">
+</audio>
+
+<audio id="coinSound">
+<source src="https://cdn.pixabay.com/download/audio/2022/03/10/audio_8a9d6e52c6.mp3?filename=coin-collect-retro-8-bit-sound-effect-145251.mp3">
+</audio>
+
+
 <header>
-<img src="pizza-power-up-logo.png" class="logo">
 
-<h1>PIZZA POWER-UP</h1>
-<p class="subtitle">Eat Like a Player 🎮</p>
+<h1>🍕 Pizza Power-Up</h1>
+<p>Level Up Your Pizza & Donair Game</p>
 
-<nav>
-<a href="#pizza">Pizza</a>
-<a href="#donair">Donair</a>
-<a href="#deals">Power-Ups</a>
-<a href="#order">Order</a>
-</nav>
 </header>
 
 
+<nav id="gameMenu">
+
+<a href="#pizza" class="menu-option">Pizza</a>
+<a href="#donair" class="menu-option">Donairs</a>
+<a href="#deals" class="menu-option">Deals</a>
+<a href="#order" class="menu-option">Order</a>
+
+</nav>
+
+
 <section id="pizza">
-<h2>🍕 Pizza Menu</h2>
 
-<div class="menu-grid">
+<h2>Pizza Menu</h2>
 
-<div class="card">
-<h3>Meat Lovers</h3>
-<p>Pepperoni • Bacon • Sausage • Ham</p>
-</div>
+<div class="menu">
 
-<div class="card">
-<h3>Vegetarian</h3>
-<p>Mushroom • Green Pepper • Onion • Olives</p>
-</div>
-
-<div class="card">
-<h3>Cheese</h3>
-<p>Classic mozzarella cheese pizza</p>
-</div>
-
-<div class="card">
-<h3>Hawaiian</h3>
-<p>Ham • Pineapple • Mozzarella</p>
-</div>
-
-<div class="card">
-<h3>Power-Up Pizza</h3>
-<p>Pepperoni • Bacon • Jalapeño • Extra Cheese</p>
-</div>
-
-<div class="card boss">
-<h3>Conquest Pizza</h3>
-<p>Pepperoni • Sausage • Bacon • Ham • Beef</p>
-</div>
+<div class="item">🍖 Meat Lovers</div>
+<div class="item">🌱 Vegetarian</div>
+<div class="item">🧀 Cheese</div>
+<div class="item">🍍 Hawaiian</div>
+<div class="item">🔥 Power-Up</div>
+<div class="item">⚔️ Conquest</div>
 
 </div>
+
 </section>
 
 
 <section id="donair">
-<h2>🌯 Donair Menu</h2>
 
-<div class="menu-grid">
+<h2>Donair Menu</h2>
 
-<div class="card">
-<h3>Beef Donair</h3>
-<p>Classic beef donair with sweet sauce</p>
-</div>
+<div class="menu">
 
-<div class="card">
-<h3>Chicken Donair</h3>
-<p>Seasoned chicken with garlic sauce</p>
-</div>
-
-<div class="card">
-<h3>Donair Poutine</h3>
-<p>Fries • Donair meat • Cheese curds • Sauce</p>
-</div>
-
-<div class="card">
-<h3>Power-Up Donair</h3>
-<p>Extra meat • Cheese • Sweet sauce</p>
-</div>
-
-<div class="card boss">
-<h3>Conquest Donair</h3>
-<p>Double meat • Fries • Sauce overload</p>
-</div>
+<div class="item">🍺 Beer Donair</div>
+<div class="item">🐔 Chicken Donair</div>
+<div class="item">🍟 Donair Poutine</div>
+<div class="item">🔥 Power-Up Donair</div>
+<div class="item">⚔️ Conquest</div>
 
 </div>
+
 </section>
 
 
 <section id="deals">
-<h2>⚡ Power-Up Deals</h2>
 
-<div class="menu-grid">
+<h2>Power-Up Deals</h2>
 
-<div class="card">
-<h3>Player 1 Combo</h3>
-<p>Pizza slice + drink</p>
-</div>
+<div class="menu">
 
-<div class="card">
-<h3>Co-Op Combo</h3>
-<p>1 Pizza + 1 Donair + Fries</p>
-</div>
-
-<div class="card boss">
-<h3>Boss Battle Feast</h3>
-<p>2 Pizzas + Donair + Poutine</p>
-</div>
+<div class="item">Level 1 Combo</div>
+<div class="item">Boss Battle</div>
+<div class="item">Party Mode</div>
 
 </div>
 
@@ -136,37 +108,86 @@
 
 
 <section id="order">
-<h2>🕹 Order Now</h2>
 
-<p>Call to place an order!</p>
+<h2>Start Order</h2>
 
-<div class="order-box">
-
-<p>📞 (780) 555-PIZZA</p>
-<p>📍 123 Power-Up Ave, Edmonton</p>
-<p>🕒 11AM – 2AM</p>
-
-<button onclick="alert('Player 1 has started an order!')">
-START ORDER
-</button>
-
-</div>
+<button class="order-button">ORDER NOW</button>
 
 </section>
 
 
 <footer>
+
 <p>© Pizza Power-Up</p>
+
 </footer>
+
 
 <script>
 
+
 function startGame(){
-document.getElementById("startScreen").style.display="none";
+
+document.getElementById("startSound").play()
+
+document.getElementById("startScreen").style.display="none"
+
 }
 
-</script>
 
+/* COIN SOUND ON MENU ITEMS */
+
+const items = document.querySelectorAll(".item")
+
+items.forEach(item => {
+
+item.addEventListener("click", () => {
+
+document.getElementById("coinSound").play()
+
+})
+
+})
+
+
+/* GAME STYLE MENU CURSOR */
+
+const options = document.querySelectorAll(".menu-option")
+
+let current = 0
+
+function updateCursor(){
+
+options.forEach(o=>o.classList.remove("selected"))
+
+options[current].classList.add("selected")
+
+}
+
+updateCursor()
+
+document.addEventListener("keydown", e=>{
+
+if(e.key==="ArrowRight"){
+
+current = (current+1)%options.length
+
+updateCursor()
+
+}
+
+if(e.key==="ArrowLeft"){
+
+current = (current-1+options.length)%options.length
+
+updateCursor()
+
+}
+
+})
+
+
+</script>
 
 </body>
 </html>
